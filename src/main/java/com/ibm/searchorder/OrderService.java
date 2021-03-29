@@ -17,7 +17,7 @@ public class OrderService {
 	public List<Order> getOrder() {
 		return orderRepository.findAll();
 	}
-	public Optional<Order> getOrder(String orderId) {
+	public Optional<Order> getOrderById(String orderId) {
 		return orderRepository.findById(orderId);
 	}
 }

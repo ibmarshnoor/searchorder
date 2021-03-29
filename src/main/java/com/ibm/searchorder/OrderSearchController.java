@@ -21,6 +21,9 @@ public class OrderSearchController {
 		return orderService.getOrder();
 	}
 	/**
+	 * Learning pull request
+	 * */
+	/**
 	 * method to search for an order
 	 * @param orderId
 	 * @return zero or matching order
@@ -28,7 +31,7 @@ public class OrderSearchController {
 
 	@GetMapping("/order/{id}")
 	Optional<Order> getOrder(@PathVariable("id") String orderId) {
-		return orderService.getOrder(orderId);
+		return orderService.getOrderById(orderId);
 	}
 
 
